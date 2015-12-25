@@ -1,0 +1,4 @@
+app/bower
+app/images/Thumbs.db
+dist
+node_modules
