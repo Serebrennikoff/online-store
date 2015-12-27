@@ -7,8 +7,8 @@ var gulp = require("gulp"),
   sass = require('gulp-sass'),
   uncss = require('gulp-uncss'),
   paths = {
-    jade:['app/**/*.jade'],
-    sass:['app/**/*.sass']
+    jade:['app/markup_jade/pages/*.jade'],
+    sass:['app/**/*.scss']
   };
 
 // сборка html css javascript + удаление папки dist
@@ -91,7 +91,7 @@ var filter = require('gulp-filter'),
       'app/css/**/*.css'
     ]).on('change', browserSync.reload);
     gulp.watch('bower.json', ['wiredep']);
-    gulp.watch(paths.jade, ['jade']);
+    gulp.watch(paths.jade, ['jade', 'wiredep']);
     gulp.watch(paths.sass, ['sass']);
   });
 
