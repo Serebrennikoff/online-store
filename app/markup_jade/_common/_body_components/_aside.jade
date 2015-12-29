@@ -1,0 +1,24 @@
+.filters__accordion
+.filters__availability
+  h2 Наличие в магазинах
+  form.availability
+    - var availability = ['Во всех магазинах', 'В ближайшем ко мне магазине'] 
+    +filters('availability', availability, 'radio', 'availability')
+  h2 Бренды
+  form.brand
+    - var brandName = ['Lenovo', 'Apple', 'Samsung', 'Asus', 'Motorola']
+    +filters('brand', brandName, 'checkbox')
+    a.filters__reset(href='#') Сбросить фильтр
+  h2 Цена
+  form.price
+    label.price__option(for="from") от
+    input#from.price__select(type="number" placeholder=0)
+    label.price__option(for="to") до
+    input#to.price__select(type="number" placeholder=100000)
+  h2 Цвет
+  form.color
+  h2 Операционные системы
+  form.os
+    - var os = ['Android', 'iOS', 'Windows Mobile', 'Symbian', 'Custom']
+    +filters('os', os, 'checkbox')
+    a.filters__reset(href='#') Сбросить фильтр

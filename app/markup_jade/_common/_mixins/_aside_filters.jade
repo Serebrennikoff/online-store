@@ -1,0 +1,5 @@
+mixin filters(className, items, type, name)
+  each item, index in items
+    - var id = className + items.indexOf(item)
+    input(type=type id=id name=name class="#{className}__select" value=item)
+    label(class="#{className}__option" for=id)= item

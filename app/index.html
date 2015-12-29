@@ -2,11 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>
-    </title>
+    <title>Мобильные телефоны</title>
     <!-- build:css css/vendor.min.css-->
     <!-- bower:css-->
-    <link rel="stylesheet" href="bower/normalize-css/normalize.css" />
     <!-- endbower-->
     <!-- endbuild-->
     <!-- build:css css/fonts.min.css-->
@@ -17,3 +15,476 @@
     <script src="bower/modernizr/modernizr.js"></script>
   </head>
 </html>
+<body>
+  <div class="wrapper">
+    <!-- header-->
+    <header>
+      <div class="contacts">
+        <div class="container">
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="socials__item"><a href="#" class="socials__link socials__link_facebook">facebook</a></li>
+              <li class="socials__item"><a href="#" class="socials__link socials__link_vk">vk</a></li>
+              <li class="socials__item"><a href="#" class="socials__link socials__link_twitter">twitter</a></li>
+            </ul>
+          </div>
+          <div class="address"><a href="https://goo.gl/maps/t36mS7HFDHx" class="address__link">ул. Маяковская 6, офис 17</a></div>
+          <div class="phone-number"><a href="tel:+79211231213" class="phone-number__link">+7 (921) 123-12-13</a></div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="container"><a href="index.html" class="header__logo"></a>
+          <div class="search">
+            <input type="text" placeholder="Что будем искать" class="search__input">
+            <input type="submit" value="Найти" class="search__submit">
+          </div>
+          <div class="quick-links">
+            <ul class="quick-links__list">
+              <li class="quick-links__item"><a href="#" class="quick-links__link">Карта проезда</a></li>
+              <li class="quick-links__item"><a href="#" class="quick-links__link">История заказов</a></li>
+              <li class="quick-links__item"><a href="#" class="quick-links__link">Корзина</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="container">
+          <nav class="navigation">
+            <div class="container">
+              <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">Планшеты</a></li>
+                <li class="navigation__item navigation__item_active"><a href="#" class="navigation__link">Мобильные телефоны</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Мр3 Плееры</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Персональные компьютеры</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Ноутбуки</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Аксессуары</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Бытовая техника</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a><span>
+                 
+                ></span>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item_active"><a href="#" class="breadcrumbs__link">Каталог</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- main content-->
+    <section>
+      <div class="container">
+        <h1>Мобильные телефоны</h1>
+        <aside class="filters">
+          <div class="filters__accordion"></div>
+          <div class="filters__availability">
+            <h2>Наличие в магазинах</h2>
+            <form class="availability">
+              <input type="radio" id="availability0" name="availability" value="Во всех магазинах" class="availability__select"/>
+              <label for="availability0" class="availability__option">Во всех магазинах</label>
+              <input type="radio" id="availability1" name="availability" value="В ближайшем ко мне магазине" class="availability__select"/>
+              <label for="availability1" class="availability__option">В ближайшем ко мне магазине</label>
+            </form>
+            <h2>Бренды</h2>
+            <form class="brand">
+              <input type="checkbox" id="brand0" value="Lenovo" class="brand__select"/>
+              <label for="brand0" class="brand__option">Lenovo</label>
+              <input type="checkbox" id="brand1" value="Apple" class="brand__select"/>
+              <label for="brand1" class="brand__option">Apple</label>
+              <input type="checkbox" id="brand2" value="Samsung" class="brand__select"/>
+              <label for="brand2" class="brand__option">Samsung</label>
+              <input type="checkbox" id="brand3" value="Asus" class="brand__select"/>
+              <label for="brand3" class="brand__option">Asus</label>
+              <input type="checkbox" id="brand4" value="Motorola" class="brand__select"/>
+              <label for="brand4" class="brand__option">Motorola</label><a href="#" class="filters__reset">Сбросить фильтр</a>
+            </form>
+            <h2>Цена</h2>
+            <form class="price">
+              <label for="from" class="price__option">от</label>
+              <input id="from" type="number" placeholder="0" class="price__select">
+              <label for="to" class="price__option">до</label>
+              <input id="to" type="number" placeholder="100000" class="price__select">
+            </form>
+            <h2>Цвет</h2>
+            <form class="color"></form>
+            <h2>Операционные системы</h2>
+            <form class="os">
+              <input type="checkbox" id="os0" value="Android" class="os__select"/>
+              <label for="os0" class="os__option">Android</label>
+              <input type="checkbox" id="os1" value="iOS" class="os__select"/>
+              <label for="os1" class="os__option">iOS</label>
+              <input type="checkbox" id="os2" value="Windows Mobile" class="os__select"/>
+              <label for="os2" class="os__option">Windows Mobile</label>
+              <input type="checkbox" id="os3" value="Symbian" class="os__select"/>
+              <label for="os3" class="os__option">Symbian</label>
+              <input type="checkbox" id="os4" value="Custom" class="os__select"/>
+              <label for="os4" class="os__option">Custom</label><a href="#" class="filters__reset">Сбросить фильтр</a>
+            </form>
+          </div>
+        </aside>
+        <main class="products">
+          <div class="products__settings">
+            <div class="products__sorting">
+              <label for="productsSorting" class="sorting__label">Сортировать по</label>
+              <select id="productsSorting" class="sorting__select">
+                <option class="select__option">по цене</option>
+                <option class="select__option">по популярности</option>
+              </select>
+            </div>
+            <div class="products__view">
+              <label for="productsView" class="view__label">Вид каталога</label>
+              <div id="productsView" class="view__options">
+                <button class="view__options_list1"></button>
+                <button class="view__options_table"></button>
+                <button class="view__options_list2"></button>
+              </div>
+            </div>
+            <div class="products__display_table">
+              <ul class="products__list">
+                <li class="product">
+                  <div class="product__img_big">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <h3 class="product__name">Samsung GT-19301I GALAXY S 3</h3>
+                  <ul class="product__chars-list">
+                    <li class="chars-list__item">Тип SIM-карты<span class="item__char">Micro-SIM</span></li>
+                    <li class="chars-list__item">Количество SIM-карт<span class="item__char">1</span></li>
+                    <li class="chars-list__item">Цвет<span class="item__char">Белый</span></li>
+                    <li class="chars-list__item">ОС<span class="item__char">Android</span></li>
+                    <li class="chars-list__item">Связь 3G<span class="item__char">Есть</span></li>
+                    <li class="chars-list__item">4G (LTE)<span class="item__char">Нет</span></li>
+                    <li class="chars-list__item">GPS-модуль<span class="item__char">Есть</span></li>
+                  </ul>
+                  <ul class="product-stars__list">
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_uncolored"></li>
+                  </ul>
+                  <div class="product__price">11 290 &amp;#8381;</div>
+                  <div class="product__availability"><span class="product__availability_available">В наличии</span>
+                  </div>
+                  <div class="product__add-to-cart">
+                    <button class="add-to-cart__button">В корзину</button>
+                  </div>
+                </li>
+                <li class="product">
+                  <div class="product__img_big">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <h3 class="product__name">Microsoft Lumia 640 RM-1077</h3>
+                  <ul class="product__chars-list">
+                    <li class="chars-list__item">Тип SIM-карты<span class="item__char">Micro-SIM</span></li>
+                    <li class="chars-list__item">Количество SIM-карт<span class="item__char">2</span></li>
+                    <li class="chars-list__item">Цвет<span class="item__char">Белый</span></li>
+                    <li class="chars-list__item">ОС<span class="item__char">Windos Phone</span></li>
+                    <li class="chars-list__item">Связь 3G<span class="item__char">Есть</span></li>
+                    <li class="chars-list__item">4G (LTE)<span class="item__char">Нет</span></li>
+                    <li class="chars-list__item">GPS-модуль<span class="item__char">A-GPS</span></li>
+                  </ul>
+                  <ul class="product-stars__list">
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_uncolored"></li>
+                  </ul>
+                  <div class="product__price">10 990 &amp;#8381;</div>
+                  <div class="product__availability"><span class="product__availability_available">В наличии</span>
+                  </div>
+                  <div class="product__add-to-cart">
+                    <button class="add-to-cart__button">В корзину</button>
+                  </div>
+                </li>
+                <li class="product">
+                  <div class="product__img_big">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <h3 class="product__name">Archos 50 Oxygen Plus</h3>
+                  <ul class="product__chars-list">
+                    <li class="chars-list__item">Тип SIM-карты<span class="item__char">Micro-SIM</span></li>
+                    <li class="chars-list__item">Количество SIM-карт<span class="item__char">2</span></li>
+                    <li class="chars-list__item">Цвет<span class="item__char">Серый</span></li>
+                    <li class="chars-list__item">ОС<span class="item__char">Android</span></li>
+                    <li class="chars-list__item">Связь 3G<span class="item__char">Есть</span></li>
+                    <li class="chars-list__item">4G (LTE)<span class="item__char">Нет</span></li>
+                    <li class="chars-list__item">GPS-модуль<span class="item__char">Есть</span></li>
+                  </ul>
+                  <ul class="product-stars__list">
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_uncolored"></li>
+                  </ul>
+                  <div class="product__price">9 900 &amp;#8381;</div>
+                  <div class="product__availability"><span class="product__availability_available">В наличии</span>
+                  </div>
+                  <div class="product__add-to-cart">
+                    <button class="add-to-cart__button">В корзину</button>
+                  </div>
+                </li>
+                <li class="product">
+                  <div class="product__img_big">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <h3 class="product__name">Philips S398 Black</h3>
+                  <ul class="product__chars-list">
+                    <li class="chars-list__item">Тип SIM-карты<span class="item__char">Micro-SIM</span></li>
+                    <li class="chars-list__item">Количество SIM-карт<span class="item__char">2</span></li>
+                    <li class="chars-list__item">Цвет<span class="item__char">Черный</span></li>
+                    <li class="chars-list__item">ОС<span class="item__char">Android</span></li>
+                    <li class="chars-list__item">Связь 3G<span class="item__char">Есть</span></li>
+                    <li class="chars-list__item">4G (LTE)<span class="item__char">Нет</span></li>
+                    <li class="chars-list__item">GPS-модуль<span class="item__char">Есть</span></li>
+                  </ul>
+                  <ul class="product-stars__list">
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_uncolored"></li>
+                  </ul>
+                  <div class="product__price">8 990 &amp;#8381;</div>
+                  <div class="product__availability"><span class="product__availability_available">В наличии</span>
+                  </div>
+                  <div class="product__add-to-cart">
+                    <button class="add-to-cart__button">В корзину</button>
+                  </div>
+                </li>
+                <li class="product">
+                  <div class="product__img_big">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <h3 class="product__name">Microsoft Lumia 430 RM-10</h3>
+                  <ul class="product__chars-list">
+                    <li class="chars-list__item">Тип SIM-карты<span class="item__char">Micro-SIM</span></li>
+                    <li class="chars-list__item">Количество SIM-карт<span class="item__char">2</span></li>
+                    <li class="chars-list__item">Цвет<span class="item__char">Черный</span></li>
+                    <li class="chars-list__item">ОС<span class="item__char">Windows Phone</span></li>
+                    <li class="chars-list__item">Связь 3G<span class="item__char">Есть</span></li>
+                    <li class="chars-list__item">4G (LTE)<span class="item__char">Нет</span></li>
+                    <li class="chars-list__item">GPS-модуль<span class="item__char">A-GPS</span></li>
+                  </ul>
+                  <ul class="product-stars__list">
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_uncolored"></li>
+                  </ul>
+                  <div class="product__price">5 390 &amp;#8381;</div>
+                  <div class="product__availability"><span class="product__availability_available">В наличии</span>
+                  </div>
+                  <div class="product__add-to-cart">
+                    <button class="add-to-cart__button">В корзину</button>
+                  </div>
+                </li>
+                <li class="product">
+                  <div class="product__img_big">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <h3 class="product__name">Senseit L301 Black</h3>
+                  <ul class="product__chars-list">
+                    <li class="chars-list__item">Тип SIM-карты<span class="item__char">Micro-SIM</span></li>
+                    <li class="chars-list__item">Количество SIM-карт<span class="item__char">2</span></li>
+                    <li class="chars-list__item">Цвет<span class="item__char">Черный</span></li>
+                    <li class="chars-list__item">ОС<span class="item__char">Android</span></li>
+                    <li class="chars-list__item">Связь 3G<span class="item__char">Есть</span></li>
+                    <li class="chars-list__item">4G (LTE)<span class="item__char">Нет</span></li>
+                    <li class="chars-list__item">GPS-модуль<span class="item__char">Есть</span></li>
+                  </ul>
+                  <ul class="product-stars__list">
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_uncolored"></li>
+                  </ul>
+                  <div class="product__price">4 990 &amp;#8381;</div>
+                  <div class="product__availability"><span class="product__availability_available">В наличии</span>
+                  </div>
+                  <div class="product__add-to-cart">
+                    <button class="add-to-cart__button">В корзину</button>
+                  </div>
+                </li>
+                <li class="product">
+                  <div class="product__img_big">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <h3 class="product__name">HIGHSCREEN WinWin Black</h3>
+                  <ul class="product__chars-list">
+                    <li class="chars-list__item">Тип SIM-карты<span class="item__char">Micro-SIM</span></li>
+                    <li class="chars-list__item">Количество SIM-карт<span class="item__char">2</span></li>
+                    <li class="chars-list__item">Цвет<span class="item__char">Черный</span></li>
+                    <li class="chars-list__item">ОС<span class="item__char">Windows Phone</span></li>
+                    <li class="chars-list__item">Связь 3G<span class="item__char">Есть</span></li>
+                    <li class="chars-list__item">4G (LTE)<span class="item__char">Нет</span></li>
+                    <li class="chars-list__item">GPS-модуль<span class="item__char">Есть</span></li>
+                  </ul>
+                  <ul class="product-stars__list">
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_uncolored"></li>
+                  </ul>
+                  <div class="product__price">3 990 &amp;#8381;</div>
+                  <div class="product__availability"><span class="product__availability_available">В наличии</span>
+                  </div>
+                  <div class="product__add-to-cart">
+                    <button class="add-to-cart__button">В корзину</button>
+                  </div>
+                </li>
+                <li class="product">
+                  <div class="product__img_big">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <h3 class="product__name">Alcatel OT4013D PIXI 3 (2 SIM)</h3>
+                  <ul class="product__chars-list">
+                    <li class="chars-list__item">Тип SIM-карты<span class="item__char">Micro-SIM</span></li>
+                    <li class="chars-list__item">Количество SIM-карт<span class="item__char">2</span></li>
+                    <li class="chars-list__item">Цвет<span class="item__char">Белый</span></li>
+                    <li class="chars-list__item">ОС<span class="item__char">Android</span></li>
+                    <li class="chars-list__item">Связь 3G<span class="item__char">Есть</span></li>
+                    <li class="chars-list__item">4G (LTE)<span class="item__char">Нет</span></li>
+                    <li class="chars-list__item">GPS-модуль<span class="item__char">A-GPS</span></li>
+                  </ul>
+                  <ul class="product-stars__list">
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_uncolored"></li>
+                  </ul>
+                  <div class="product__price">3 290 &amp;#8381;</div>
+                  <div class="product__availability"><span class="product__availability_available">В наличии</span>
+                  </div>
+                  <div class="product__add-to-cart">
+                    <button class="add-to-cart__button">В корзину</button>
+                  </div>
+                </li>
+                <li class="product">
+                  <div class="product__img_big">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <div class="product__img_small">
+                    < ></ >
+                  </div>
+                  <h3 class="product__name">Fly IQ434 Era Nano 5</h3>
+                  <ul class="product__chars-list">
+                    <li class="chars-list__item">Тип SIM-карты<span class="item__char">Micro-SIM</span></li>
+                    <li class="chars-list__item">Количество SIM-карт<span class="item__char">2</span></li>
+                    <li class="chars-list__item">Цвет<span class="item__char">Черный</span></li>
+                    <li class="chars-list__item">ОС<span class="item__char">Android</span></li>
+                    <li class="chars-list__item">Связь 3G<span class="item__char">Нет</span></li>
+                    <li class="chars-list__item">4G (LTE)<span class="item__char">Нет</span></li>
+                    <li class="chars-list__item">GPS-модуль<span class="item__char">Нет</span></li>
+                  </ul>
+                  <ul class="product-stars__list">
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_colored"></li>
+                    <li class="product-stars__item_uncolored"></li>
+                  </ul>
+                  <div class="product__price">1 790 &amp;#8381;</div>
+                  <div class="product__availability"><span class="product__availability_available">В наличии</span>
+                  </div>
+                  <div class="product__add-to-cart">
+                    <button class="add-to-cart__button">В корзину</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+  </div>
+</body>

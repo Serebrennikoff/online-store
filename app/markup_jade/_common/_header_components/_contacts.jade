@@ -1,0 +1,9 @@
+.contacts
+  .container
+    .socials
+      - var socials = ['facebook', 'vk', 'twitter']
+      +socials('socials', socials)
+    .address
+      a.address__link(href="https://goo.gl/maps/t36mS7HFDHx") ул. Маяковская 6, офис 17
+    .phone-number
+      a.phone-number__link(href="tel:+79211231213") +7 (921) 123-12-13

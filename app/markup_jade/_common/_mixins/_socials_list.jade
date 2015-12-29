@@ -1,0 +1,5 @@
+mixin socials(className, items)
+  ul(class="#{className}__list")
+    each item, index in items
+      li(class="#{className}__item")
+            a(href="#" class="#{className}__link #{className}__link_#{item}")= item

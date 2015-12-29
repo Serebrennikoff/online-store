@@ -1,0 +1,5 @@
+.nav
+  .container
+    - var navItems = ['Планшеты', 'Мобильные телефоны', 'Мр3 Плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника']
+    - var activeIndex = navItems.indexOf(title)
+    +nav ('navigation', navItems, activeIndex)

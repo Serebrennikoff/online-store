@@ -1,1 +1,23 @@
-include ../_common/head.jade
+include ../_common/_mixins/_links_list.jade
+include ../_common/_mixins/_socials_list.jade
+include ../_common/_mixins/_nav_list.jade
+include ../_common/_mixins/_bc_list.jade
+include ../_common/_mixins/_aside_filters.jade
+include ../_common/_mixins/_sorting_select.jade
+include ../_common/_mixins/_products_list.jade
+
+- var title = 'Мобильные телефоны'
+- var breadcrumbs = ['Главная', 'Каталог']
+- var activeBreadcrumb = breadcrumbs.length - 1
+
+doctype html
+html(lang='ru')
+
+  include ../_common/head.jade
+
+body
+  .wrapper
+    // header
+    include ../_common/header.jade
+    // main content
+    include ../_common/body.jade

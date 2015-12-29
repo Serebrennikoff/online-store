@@ -91,7 +91,7 @@ var filter = require('gulp-filter'),
       'app/css/**/*.css'
     ]).on('change', browserSync.reload);
     gulp.watch('bower.json', ['wiredep']);
-    gulp.watch(paths.jade, ['jade', 'wiredep']);
+    gulp.watch(paths.jade, ['jade']);
     gulp.watch(paths.sass, ['sass']);
   });
 

@@ -1,0 +1,17 @@
+.products__settings
+  .products__sorting
+    label.sorting__label(for='productsSorting') Сортировать по
+    select#productsSorting.sorting__select
+      - var options = ['по цене', 'по популярности']
+      +sorting('select', options)
+  .products__view
+    label.view__label(for='productsView') Вид каталога
+    #productsView.view__options
+      button.view__options_list1
+      button.view__options_table
+      button.view__options_list2
+  .products__display_table
+    ul.products__list
+      include _products_arrays.jade
+      +productsDisplay(products)
+

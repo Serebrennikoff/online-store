@@ -1,0 +1,48 @@
+mixin productsDisplay(items)
+  each item, index in items
+    li.product
+      .product__img_big
+        #{item.photo1}
+      .product__img_small
+        #{item.photo1}
+      .product__img_small
+        #{item.photo2}
+      .product__img_small
+        #{item.photo3}
+      h3.product__name= item.title
+      ul.product__chars-list
+        li.chars-list__item
+          | Тип SIM-карты
+          span.item__char= item.simType
+        li.chars-list__item
+          | Количество SIM-карт
+          span.item__char= item.simNum
+        li.chars-list__item
+          | Цвет
+          span.item__char= item.color
+        li.chars-list__item
+          | ОС
+          span.item__char= item.os
+        li.chars-list__item
+          | Связь 3G
+          span.item__char= item.avail3G
+        li.chars-list__item
+          | 4G (LTE)
+          span.item__char= item.avail4G
+        li.chars-list__item
+          | GPS-модуль
+          span.item__char= item.gps
+      ul.product-stars__list
+        - for (var i = 1; i <= item.stars; i++)
+          li.product-stars__item_colored
+        - for (var d = 5 - item.stars; d > 0; d--)
+          li.product-stars__item_uncolored
+      .product__price= item.price
+      .product__availability
+        if item.available
+          span.product__availability_available В наличии
+        else
+          span.product__availability_not-available Нет в наличии
+      .product__add-to-cart
+        button.add-to-cart__button В корзину
+

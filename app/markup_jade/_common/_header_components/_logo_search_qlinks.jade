@@ -1,0 +1,9 @@
+.header
+  .container
+    a.header__logo(href="index.html")
+    .search
+      input.search__input(type="text" placeholder="Что будем искать")
+      input.search__submit(type="submit" value="Найти")
+    .quick-links
+      - var quickLinks = ['Карта проезда', 'История заказов', 'Корзина']
+      +links('quick-links', quickLinks)
